@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  {{> meta }}
+  <body>
+    <!-- navigation -->
+      {{> navbar }}
+    <!-- /navigation -->
+
+    <!-- content -->
+    <section class="section">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column is-half">
+          <ul class="recent">
+          {{#each articles }}
+            <li>
+              <span class="title">
+                <a href="{{ path }}">{{ title }}</a>
+                <small class="has-text-grey-dark is-size-6"><em>{{ publishDate }}</em></small>
+              </span>
+            </li>
+          {{/each}}
+          </ul>
+        </div>
+        <div class="column"></div>
+      </div>
+    </section>
+    <!-- /content -->
+
+    <!-- footer -->
+    {{> footer }}
+    <!-- /footer -->
+  </body>
+</html>
