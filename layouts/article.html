@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-  {{> meta }}
-  <body>
-    <header>
-      <a class="back-to-index" href="../index.html">&larr; Back to Home...</a>
-    </header>
-    <article>
-      <h1>{{ title }}</h1>
-      <div class="meta">
-          {{#if date}}Published: {{ date }}{{/if}}
-      </div>
-      {{{ contents }}}
-    </article>
+{{> meta }}
 
+<body>
+    <section class="section">
+        <div class="container">
+            <header>
+                <a class="back-to-index" href="../index.html">&larr; Back to Home...</a>
+            </header>
+            <article>
+                <h1 class="title is-1">{{ title }}</h1>
+                <div class="meta">
+                    {{#if date}}Published on: {{ date }}{{/if}}
+                </div>
+                {{{ contents }}}
+            </article>
+        </div>
+        </div>
+    </section>
     {{> footer }}
-  </body>
+</body>
+
 </html>
