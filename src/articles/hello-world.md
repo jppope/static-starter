@@ -1,7 +1,8 @@
 ---
 title: "Hello World"
 publishDate: 2017-08-19
-blurb: testing new blog
+img: "http://placehold.it/300x200"
+blurb: "an important inspection of how the hell we ended up arguing over shit that doesn't matter"
 ---
 
 ## Welcome to jonpauluritis.com

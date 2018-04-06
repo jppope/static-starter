@@ -21,7 +21,8 @@ metalsmith(__dirname)
     .source('./src')
     .destination('./public')
     .use(dateFormatter({
-        dates: 'publishDate'
+        key: 'date',
+        format: 'YYYY-MM'
     }))
     .use(collections({
         articles: {

@@ -1,7 +1,7 @@
 ---
-title: "Hello World2"
-publishDate: 2017-08-19
-blurb: testing new second article
+title: "Eat the Middle class... they don't work out"
+date: 2017-08-19
+blurb: "Reflection on how the hell we destroyed our middle class but enjoyed every minute of it"
 ---
 
 ## Welcome to jonpauluritis.com

@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
-  {{> meta }}
-  <body>
-    <!-- navigation -->
-      {{> navbar }}
-    <!-- /navigation -->
+{{> meta }}
 
+<body>
+    <!-- navigation -->
+    {{> navbar }}
+    <!-- /navigation -->
     <!-- content -->
     <section class="section">
-      <div class="columns">
-        <div class="column"></div>
-        <div class="column is-half">
-          <ul class="recent">
-          {{#each articles }}
-            <li>
-              <span class="title">
-                <a href="{{ path }}">{{ title }}</a>
-                <small class="has-text-grey-dark is-size-6"><em>{{ publishDate }}</em></small>
-              </span>
-            </li>
-          {{/each}}
-          </ul>
+        <div class="container">
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column is-two-thirds">
+                    <ul class="recent">
+                        {{#each articles }}
+                        <li style="padding:10px;">
+                            <nav class="columns">
+                                <!-- Left side -->
+                                <div class="column is-3">
+                                    <p class="subtitle is-5 has-text-centered">
+                                        <img src="{{img}}">
+                                    </p>
+                                </div>
+                                <!-- Right side -->
+                                <div class="column">
+                                    <p class="">
+                                        <h2 class="title is-3 is-marginless">
+                                            <a href="{{ path }}">{{ title }}</a>
+                                        </h2>
+                                        <small style="font-size:1rem;">{{ date }}</small>
+                                        <p>{{ blurb }}</p>
+                                    </p>
+                                </div>
+                            </nav>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="column"></div>
+            </div>
         </div>
-        <div class="column"></div>
-      </div>
     </section>
     <!-- /content -->
 
     <!-- footer -->
     {{> footer }}
     <!-- /footer -->
-  </body>
+</body>
+
 </html>
