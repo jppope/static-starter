@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <title>{{#if title }}{ {title }} - {{/if}}{{ site.name }}</title>
+    <title>{{#if title }}{{ title }} - {{/if}}{{ site.name }}</title>
     <meta name="description" content="{{#if blurb}}{{ blurb }}{{else}}{{#if description}}{{ description }}{{else}}{{ site.description }}{{/if}}{{/if}}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
     <style>
@@ -15,10 +15,29 @@
             font-family: sans-serif;
         }
         
-        h2 {
+        h1.blog-title {
+            background: black;
+            color: hotpink;
+            padding: 1px 10px;
             font-family: sans-serif;
             font-family: monospace;
             letter-spacing: -3px;
+            /* white-space: pre-wrap; */
+        }
+        
+        h2 a,
+        span {
+            background: black;
+            color: hotpink;
+            padding: 1px 10px;
+            font-family: sans-serif;
+            font-family: monospace;
+            letter-spacing: -3px;
+            white-space: pre-wrap;
+        }
+        
+        h2 a:hover {
+            color: white;
         }
         
         p {

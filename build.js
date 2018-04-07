@@ -22,7 +22,7 @@ metalsmith(__dirname)
     .destination('./public')
     .use(dateFormatter({
         key: 'date',
-        format: 'YYYY-MM'
+        format: 'YYYY-MM-DD'
     }))
     .use(collections({
         articles: {

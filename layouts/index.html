@@ -14,7 +14,7 @@
                 <div class="column is-two-thirds">
                     <ul class="recent">
                         {{#each articles }}
-                        <li style="padding:10px;">
+                        <li style="margin-bottom:20px;">
                             <nav class="columns">
                                 <!-- Left side -->
                                 <div class="column is-3">
@@ -25,10 +25,10 @@
                                 <!-- Right side -->
                                 <div class="column">
                                     <p class="">
-                                        <h2 class="title is-3 is-marginless">
+                                        <h2 class="title is-4 is-marginless">
                                             <a href="{{ path }}">{{ title }}</a>
+                                            <small style="font-size:1.1rem;">[{{ date }}]</small>
                                         </h2>
-                                        <small style="font-size:1rem;">{{ date }}</small>
                                         <p>{{ blurb }}</p>
                                     </p>
                                 </div>

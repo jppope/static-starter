@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{ {title }} - JonPaulUritis.com</title>
+    <title>About - JonPaulUritis.com</title>
     <meta name="description" content="jonpauluritis is a blog." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
     <style>
@@ -17,10 +17,29 @@
             font-family: sans-serif;
         }
         
-        h2 {
+        h1.blog-title {
+            background: black;
+            color: hotpink;
+            padding: 1px 10px;
             font-family: sans-serif;
             font-family: monospace;
             letter-spacing: -3px;
+            /* white-space: pre-wrap; */
+        }
+        
+        h2 a,
+        span {
+            background: black;
+            color: hotpink;
+            padding: 1px 10px;
+            font-family: sans-serif;
+            font-family: monospace;
+            letter-spacing: -3px;
+            white-space: pre-wrap;
+        }
+        
+        h2 a:hover {
+            color: white;
         }
         
         p {
@@ -31,20 +50,31 @@
 <body>
     <section class="section">
         <div class="container">
-            <header>
-                <a class="back-to-index" href="../index.html">&larr; Back to Home...</a>
-            </header>
-            <article>
-                <h1 class="title is-1">About</h1>
-                <div class="meta">
-                    
-                </div>
-                <p>Hello, my name is Dwayne Johnson.</p>
+            <div class="content">
+                <div class="columns">
+                    <div class="column"></div>
+                    <div class="column is-three-quarters">
+                        <header>
+                            <a class="back-to-index" href="../index.html">&larr; Back to Home...</a>
+                            <h1 class="title is-3 blog-title">
+                                About
+                            </h1>
+                        </header>
+                        <br>
+                        <article>
+
+                            <div class="meta">
+                                
+                            </div>
+                            <p>Hello, my name is Dwayne Johnson.</p>
 <p>If you&#39;d like to get in touch with me, you can contact me <a href="example@example.com">via email</a>. </p>
 <p>In the meantime, I do hope you enjoy your day on this <em>pale blue dot</em> that is our home.</p>
 
-            </article>
-        </div>
+                        </article>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="hero is-dark is-bold">

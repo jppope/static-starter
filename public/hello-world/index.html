@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{ {title }} - JonPaulUritis.com</title>
+    <title>Hello World - JonPaulUritis.com</title>
     <meta name="description" content="an important inspection of how the hell we ended up arguing over shit that doesn&#x27;t matter" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
     <style>
@@ -17,10 +17,29 @@
             font-family: sans-serif;
         }
         
-        h2 {
+        h1.blog-title {
+            background: black;
+            color: hotpink;
+            padding: 1px 10px;
             font-family: sans-serif;
             font-family: monospace;
             letter-spacing: -3px;
+            /* white-space: pre-wrap; */
+        }
+        
+        h2 a,
+        span {
+            background: black;
+            color: hotpink;
+            padding: 1px 10px;
+            font-family: sans-serif;
+            font-family: monospace;
+            letter-spacing: -3px;
+            white-space: pre-wrap;
+        }
+        
+        h2 a:hover {
+            color: white;
         }
         
         p {
@@ -31,15 +50,23 @@
 <body>
     <section class="section">
         <div class="container">
-            <header>
-                <a class="back-to-index" href="../index.html">&larr; Back to Home...</a>
-            </header>
-            <article>
-                <h1 class="title is-1">Hello World</h1>
-                <div class="meta">
-                    
-                </div>
-                <h2 id="welcome-to-jonpauluritis-com">Welcome to jonpauluritis.com</h2>
+            <div class="content">
+                <div class="columns">
+                    <div class="column"></div>
+                    <div class="column is-three-quarters">
+                        <header>
+                            <a class="back-to-index" href="../index.html">&larr; Back to Home...</a>
+                            <h1 class="title is-3 blog-title">
+                                Hello World
+                            </h1>
+                        </header>
+                        <br>
+                        <article>
+
+                            <div class="meta">
+                                2017-08-18
+                            </div>
+                            <h2 id="welcome-to-jonpauluritis-com">Welcome to jonpauluritis.com</h2>
 <p>This is an attempt to flip my blog over to a static site generator... cause who wants ole wordpress now adays anyway?</p>
 <blockquote>
 <p>example one, two three</p>
@@ -52,8 +79,11 @@
 <h3 id="section">Section</h3>
 <p>Words underneath the section</p>
 
-            </article>
-        </div>
+                        </article>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="hero is-dark is-bold">

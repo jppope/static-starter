@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
-publishDate: 2017-08-19
-img: "http://placehold.it/300x200"
+date: 2017-08-18
+img: "https://i.ebayimg.com/images/g/71AAAOSw4AdZ0LJS/s-l300.jpg"
 blurb: "an important inspection of how the hell we ended up arguing over shit that doesn't matter"
 ---
 

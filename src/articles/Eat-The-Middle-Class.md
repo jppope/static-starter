@@ -2,6 +2,7 @@
 title: "Eat the Middle class... they don't work out"
 date: 2017-08-19
 blurb: "Reflection on how the hell we destroyed our middle class but enjoyed every minute of it"
+img: "http://freeartisticphotos.com/wp-content/uploads/2012/12/Black-and-white-surf-photo-300x200.jpg"
 ---
 
 ## Welcome to jonpauluritis.com

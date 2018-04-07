@@ -5,17 +5,28 @@
 <body>
     <section class="section">
         <div class="container">
-            <header>
-                <a class="back-to-index" href="../index.html">&larr; Back to Home...</a>
-            </header>
-            <article>
-                <h1 class="title is-1">{{ title }}</h1>
-                <div class="meta">
-                    {{#if date}}Published on: {{ date }}{{/if}}
+            <div class="content">
+                <div class="columns">
+                    <div class="column"></div>
+                    <div class="column is-three-quarters">
+                        <header>
+                            <a class="back-to-index" href="../index.html">&larr; Back to Home...</a>
+                            <h1 class="title is-3 blog-title">
+                                {{ title }}
+                            </h1>
+                        </header>
+                        <br>
+                        <article>
+
+                            <div class="meta">
+                                {{#if date}}{{ date }}{{/if}}
+                            </div>
+                            {{{ contents }}}
+                        </article>
+                    </div>
+                    <div class="column"></div>
                 </div>
-                {{{ contents }}}
-            </article>
-        </div>
+            </div>
         </div>
     </section>
     {{> footer }}
